@@ -4,7 +4,7 @@
   "main": "dist/src/server.js",
   "scripts": {
     "build": "tsc",
-    "start": "npm run build && node dist/src/server.js",
+    "start": "node dist/src/server.js",
     "dev": "nodemon --watch src --exec \"tsc && node dist/src/server.js\"",
     "migrate": "npx sequelize db:migrate",
     "migrate:undo": "npx sequelize db:migrate:undo:all",
