@@ -1,0 +1,41 @@
+// const path = require("path");
+
+// module.exports = {
+//   config: path.resolve(__dirname, "dist", "db", "config", "config.js"), // Correct config path
+//   "models-path": path.resolve(__dirname, "dist", "db", "models"),
+//   "migrations-path": path.resolve(__dirname, "dist", "db", "migrations"),
+// };
+
+
+// const path = require("path");
+
+// module.exports = {
+//   config: path.resolve(__dirname, "db", "config", "config.js"),
+//   "models-path": path.resolve(__dirname, "db", "models"),
+//   "seeders-path": path.resolve(__dirname, "db", "seeders"),
+//   "migrations-path": path.resolve(__dirname, "db", "migrations"),
+// };
+
+const path = require("path");
+
+module.exports = {
+  config: path.resolve(__dirname, "dist", "db", "config", "config.js"), // Ensure compiled JS is used
+  "models-path": path.resolve(__dirname, "dist", "db", "models"),
+  "seeders-path": path.resolve(__dirname, "dist", "db", "seeders"),
+  "migrations-path": path.resolve(__dirname, "dist", "db", "migrations"),
+};
+
+
+
+
+
+// // .sequelizerc
+
+// const path = require('path');
+
+// module.exports = {
+//   config: path.resolve('config', 'config.ts'),
+//   'models-path': path.resolve('db', 'models'),
+//   'seeders-path': path.resolve('db', 'seeders'),
+//   'migrations-path': path.resolve('db', 'migrations'),
+// };
