@@ -15,8 +15,7 @@ app.use(
       origin: [
         "http://127.0.0.1:5173",
         "http://localhost:5173",
-        // "https://restaurant-client-ecru.vercel.app",
-        // "https://restaurant-server-k5jh.onrender.com",
+        "https://restaurants-client.onrender.com",
         "http://localhost:5005",
       ],
       methods: ["GET", "PUT", "POST", "PATCH", "DELETE"],
