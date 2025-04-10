@@ -73,21 +73,5 @@ export default class BaseRepository<T extends Model> {
 
     
 
-    // async updateById(data: any, id: string): Promise<any> {
-    //     try {
-    //         return await this.model.update(data, {
-    //             where: { id: { [Op.eq]: id } },
-    //         });
-    //     } catch (error: any) {
-    //         throw error;
-    //     }
-    // }
-
-    // async deleteById(id: string): Promise<any> {
-    //     try {
-    //         return await this.model.destroy({ where: { id }, force: true });
-    //     } catch (error: any) {
-    //         throw error;
-    //     }
-    // }
+   
 }

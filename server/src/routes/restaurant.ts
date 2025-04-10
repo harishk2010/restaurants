@@ -4,7 +4,7 @@ import { restaurantController } from "../config/dependencyInjection";
 
 const router = Router();
 
-// Using router chaining for cleaner code organization
+
 router
   .route("/")
   .post(restaurantController.createRestaurant.bind(restaurantController))

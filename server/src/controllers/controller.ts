@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import db from "../../db/models"; // Ensure correct import
+import db from "../../db/models"; 
 import { error } from "console";
 import { Op } from "sequelize";
 
@@ -40,7 +40,7 @@ export default class RestaurantController {
         }
     }
 
-    //Get ALL Restaurent
+
     async getAllRestaurant(req: Request, res: Response): Promise<any> {
         try {
             console.log("enetred")
@@ -64,7 +64,6 @@ export default class RestaurantController {
         }
     }
 
-    //Find By Id
     async getRestaurantById(req: Request, res: Response): Promise<any> {
         try {
             const { id } = req.params; // Get ID from request params
@@ -123,10 +122,7 @@ export default class RestaurantController {
             )
 
             if (updatedRows === 0) {
-                // return res.status(404).json({
-                //     success: false,
-                //     message: "Restaurant not found or no changes made!",
-                // });
+                
                 throw error
             }
 
